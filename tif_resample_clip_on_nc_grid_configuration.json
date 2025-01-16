@@ -1,0 +1,25 @@
+{
+    "options": {
+        "lat_variable": "lat",
+        "lon_variable": "lon",
+        "grid_crs": "EPSG:4326",
+        "resampling": "nearest",
+        "__resampling_comment__": "Methods accepted: nearest, bilinear, cubic, cubic_spline, average, mode, max, min, med, sum. Any other has to be implemented in the code to be used. Ref: https://rasterio.readthedocs.io/en/stable/api/rasterio.enums.html#rasterio.enums.Resampling"
+    },
+    "paths": {
+        "root": "/home/mnatali/Work_Area/SWB_WCM_Pub",
+        "data_input": {
+            "geojson_path": "",
+            "grid_nc_path": "/home/mnatali/Work_Area/Data/Study_sites/Sara_domain_LIS/lis_input_EBRO_irrcali_NoahMP3.6_ProbaV.nc"
+        },
+        "data_output": {
+            "folder_products": "/home/mnatali/Work_Area/Data/Products_extract/GOSIF_GPP_2000-2023/",
+            "folder_processed": "/home/mnatali/Work_Area/Data/Study_sites/Sara_domain_LIS/GPP/",
+            "filename_template": "GOSIF_GPP_*.M*_Mean.tif",
+            "filename_processed_add": "_clipped.tif",
+            "add_description": "",
+            "opt_save_tif": "True",
+            "opt_save_plot": "True"
+        }
+    }
+}
